@@ -1,0 +1,11 @@
+<footer>
+  <ul>
+    <% for (let i = 0; i < footLinks.length; i++) { %>
+      <li>
+        <a href="<%= footLinks[i].href %>">
+          <span> <%= footLinks[i].text %> </span>
+        </a>
+      </li>
+    <% } %>
+  </ul>
+</footer>
