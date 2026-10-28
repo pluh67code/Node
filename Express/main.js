@@ -1,6 +1,7 @@
 import express from "express";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import {body, validationResult} from "express-validator";
 //
 import authorRouter from "./routes/authorRouter.js";
 import bookRouter from "./routes/bookRouter.js";
@@ -21,6 +22,7 @@ const footLinks = [
 
 const users = ["Rose", "Cake", "Biff"];
 const aboutMessage = "bonjour le mon! welcome to cro-deez! where the mandem play and the yute are bare waste fam!";
+
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
